@@ -1,0 +1,39 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+<form method="post" action="@Url.Action("Create", "Product")">
+    <table>
+        <tr>
+            <td><label for="category">Category:</label></td>
+            <td>
+                <select id="category" name="category">
+                    <!-- Kategori seçenekleri burada listelenir -->
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="productName">Product Name:</label></td>
+            <td><input type="text" id="productName" name="productName" /></td>
+        </tr>
+        <tr>
+            <td><label for="price">Price:</label></td>
+            <td><input type="text" id="price" name="price" /></td>
+        </tr>
+        <tr>
+            <td><label for="description">Description:</label></td>
+            <td><textarea id="description" name="description"></textarea></td>
+        </tr>
+        <tr>
+            <td><label for="inStock">In Stock:</label></td>
+            <td><input type="checkbox" id="inStock" name="inStock" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button type="submit">Save</button></td>
+        </tr>
+    </table>
+</form>
